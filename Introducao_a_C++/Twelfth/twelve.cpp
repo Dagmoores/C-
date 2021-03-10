@@ -1,3 +1,4 @@
+  
 #include <iostream>
 
 using namespace std;
@@ -26,9 +27,14 @@ int main() {
     int* vector = new int[vectorSize];
     
     for (int i = 0; i < vectorSize; i++) {
-        cout << "Type the vector elements" << endl;
+        cout << "Type the element "<< i+1 << "of the vector" << endl;
         cin >> vector[i];
     }
 
+   for (int i = 0; i < vectorSize; i++) {
+     cout << vector[i] << " "; 
+   }
+   cout << endl;
+  
     return 0;
 }
