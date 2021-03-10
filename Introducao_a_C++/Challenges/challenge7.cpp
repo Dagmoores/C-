@@ -13,6 +13,17 @@ int j;
 
 int main() {
 
+  cout << "Type the number of rows in your matrix: ";
+  cin >> i;
+  cout << endl;
+
+  cout << "Now, type the number of columns in your matrix: ";
+  cin >> j;
+  cout << endl;
+
+  cout << "The dimensions of your matrix are " << i << " by " << j
+    << endl;
+  
   int matrix[i][j];
   
   return 0;
