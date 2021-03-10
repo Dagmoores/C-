@@ -71,9 +71,9 @@ int main() {
     matrix3[1][1] = matrix1[1][1] + matrix2[1][1];
     matrix3[1][2] = matrix1[1][2] + matrix2[1][2];
 
-    cout << "The sum of Matrix One and Matrix Two: " <<endl;
-    cout << matrix3 << endl;
-  
+    cout << "The sum of Matrix One and Matrix Two: " << endl;
+    cout << matrix3[a][b] << endl;
+
   
   return 0;
 }
