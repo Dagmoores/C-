@@ -59,6 +59,21 @@ int main() {
     cout << endl;
   }
 
+  //Matrix 1 + Matrix 3
+    int a;
+    int b;
+  
+    int matrix3[a][b];
+    matrix3[0][0] = matrix1[0][0] + matrix2[0][0];
+    matrix3[0][1] = matrix1[0][1] + matrix2[0][1];
+    matrix3[0][2] = matrix1[0][2] + matrix2[0][2];
+    matrix3[1][0] = matrix1[1][0] + matrix2[1][0];
+    matrix3[1][1] = matrix1[1][1] + matrix2[1][1];
+    matrix3[1][2] = matrix1[1][2] + matrix2[1][2];
+
+    cout << "The sum of Matrix One and Matrix Two: " <<endl;
+    cout << matrix3 << endl;
+  
   
   return 0;
 }
