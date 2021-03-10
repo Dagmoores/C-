@@ -1,4 +1,4 @@
-  
+ 
 #include <iostream>
 
 using namespace std;
@@ -24,8 +24,10 @@ int main() {
     int vectorSize;
     cout << "Type the vector size: " <<endl;
     cin >> vectorSize;
-    int* vector = new int[vectorSize];
-    
+    int* vector = new int[vectorSize];  
+    /* here we created the vector, and instantiate a pointer to
+     have access it.
+    */
     for (int i = 0; i < vectorSize; i++) {
         cout << "Type the element "<< i+1 << "of the vector" << endl;
         cin >> vector[i];
@@ -35,6 +37,8 @@ int main() {
      cout << vector[i] << " "; 
    }
    cout << endl;
+
+  delete [] vector //this way, with [] we can delete the vector.
   
     return 0;
 }
