@@ -10,7 +10,7 @@ int familySauro;
 int familyLainetti;
 int familyLeone;
 
-int main() {
+   int main() {
 
     familyMoore = 55;
     familySilva = 34;
