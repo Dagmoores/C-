@@ -15,12 +15,10 @@ int z;
 
 int main() {
 
-  x = 2;
-  y = 3;
-  w = 2;
-  z = 3;
+  int i = 2;
+  int j = 3;
   
-  int matrix1[x][y];
+  int matrix1[i][j];
   matrix1[0][0] = 11;
   matrix1[0][1] = 12;
   matrix1[0][2] = 13;
@@ -28,7 +26,7 @@ int main() {
   matrix1[1][1] = 15;
   matrix1[1][2] = 16;
 
-   int matrix2[w][z];
+   int matrix2[i][j];
   matrix2[0][0] = 17;
   matrix2[0][1] = 18;
   matrix2[0][2] = 19;
@@ -60,10 +58,8 @@ int main() {
   }
 
   //Matrix 1 + Matrix 3
-    int a;
-    int b;
-  
-    int matrix3[a][b];
+
+    int matrix3[i][j];
     matrix3[0][0] = matrix1[0][0] + matrix2[0][0];
     matrix3[0][1] = matrix1[0][1] + matrix2[0][1];
     matrix3[0][2] = matrix1[0][2] + matrix2[0][2];
@@ -71,8 +67,14 @@ int main() {
     matrix3[1][1] = matrix1[1][1] + matrix2[1][1];
     matrix3[1][2] = matrix1[1][2] + matrix2[1][2];
 
-    cout << "The sum of Matrix One and Matrix Two: " << endl;
-    cout << matrix3[a][b] << endl;
+    cout << "The sum of Matrix One and Matrix Two is: " << endl;
+
+  for(int i = 0; i < 2; i++) {
+    for (int j = 0; j < 3; j++) {
+      cout << matrix3[i][j] << " ";
+    }
+    cout << endl;
+  }
 
   
   return 0;
