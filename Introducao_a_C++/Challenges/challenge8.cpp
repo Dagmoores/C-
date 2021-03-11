@@ -28,6 +28,29 @@ int main() {
     }
     
     cout << "]";
+    
+    cout << "Do you want to write another vector? type 'Y' for yes and 'N' for no: ";
+    char command;
+    cin >> command;
+    if (command == "y") {
+    
+    int y;
+    int vector[y]; 
   
+    cout << "Type the vector size: ";
+      cin >> y;
+
+    for (int i = 0; i < y; i++) {
+      cout << "Type the first element of this vector: "; 
+        cin >> vector[i];
+    }
+
+    cout << "[ ";
+      for (int i = 0; i < y; i++) {
+      cout << vector[i] << " "; 
+    }
+    
+    cout << "]";    
+    
+    }
     return 0;
-}
