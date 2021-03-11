@@ -9,6 +9,7 @@ Utilize o delete após a impressão do vetor. */
 using namespace std;
 
 int x;
+int a;
 
 int main() {
 
@@ -34,9 +35,9 @@ int main() {
     string yOrN;
     cin >> yOrN;
     
-    if (yOrN == "y" || "Y") {
+    while (yOrN == "y" || "Y") {
     
-    int a;
+   
     int vector[a]; 
   
     cout << "Type the vector size: ";
@@ -52,8 +53,10 @@ int main() {
       cout << vector[i] << " "; 
     }
     
-    cout << "]";    
-    
+    cout << "]" << endl;    
+
+    cout << "Do you want to write another vector? type 'Y': ";
+    cin >> yOrN;
     }
     return 0;
 }
