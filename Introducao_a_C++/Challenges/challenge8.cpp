@@ -24,7 +24,6 @@ int* vector = new int[x];
     
     cout << "]" << endl;
 
-    delete [] vector;
     
     cout << "Do you want to write another vector? type 'Y': ";
 
@@ -32,9 +31,7 @@ int* vector = new int[x];
     cin >> yOrN;
     
     if (yOrN == "Y") {
-    
-    int vector[a]; 
-  
+
     cout << "Type the vector size: ";
       cin >> a;
 
@@ -51,7 +48,7 @@ int* vector = new int[x];
     cout << "]" << endl;    
     } 
 
-
+    delete [] vector;
   
     return 0;
 }
