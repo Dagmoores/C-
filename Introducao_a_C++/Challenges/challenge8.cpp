@@ -32,12 +32,12 @@ int main() {
     
     
     cout << "Do you want to write another vector? type 'Y': ";
+
     string yOrN;
     cin >> yOrN;
     
-    while (yOrN == "y" || "Y") {
+    if (yOrN == "Y") {
     
-   
     int vector[a]; 
   
     cout << "Type the vector size: ";
@@ -54,9 +54,8 @@ int main() {
     }
     
     cout << "]" << endl;    
+    } 
 
-    cout << "Do you want to write another vector? type 'Y': ";
-    cin >> yOrN;
-    }
+    delete [] vector;
     return 0;
 }
