@@ -8,18 +8,26 @@ Utilize o delete após a impressão do vetor. */
 
 using namespace std;
 
-int i;
+int x;
 
 int main() {
 
-    int vector[i]; 
+    int vector[x]; 
   
     cout << "Type the vector size: ";
-      cin >> i;
+      cin >> x;
 
-  
-    cout << "Type the first element of this vector: " 
-      cin >> vector[0]
+    for (int i = 0; i < x; i++) {
+      cout << "Type the first element of this vector: "; 
+        cin >> vector[i];
+    }
+
+    cout << "[ ";
+      for (int i = 0; i < x; i++) {
+      cout << vector[i] << " "; 
+    }
+    
+    cout << "]";
   
     return 0;
 }
