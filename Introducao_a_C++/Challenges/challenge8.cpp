@@ -27,26 +27,28 @@ int main() {
       cout << vector[i] << " "; 
     }
     
-    cout << "]";
+    cout << "]" << endl;
     
-    cout << "Do you want to write another vector? type 'Y' for yes and 'N' for no: ";
-    char command;
-    cin >> command;
-    if (command == "y") {
     
-    int y;
-    int vector[y]; 
+    cout << "Do you want to write another vector? type 'Y': ";
+    string yOrN;
+    cin >> yOrN;
+    
+    if (yOrN == "y" || "Y") {
+    
+    int a;
+    int vector[a]; 
   
     cout << "Type the vector size: ";
-      cin >> y;
+      cin >> a;
 
-    for (int i = 0; i < y; i++) {
+    for (int i = 0; i < a; i++) {
       cout << "Type the first element of this vector: "; 
         cin >> vector[i];
     }
 
     cout << "[ ";
-      for (int i = 0; i < y; i++) {
+      for (int i = 0; i < a; i++) {
       cout << vector[i] << " "; 
     }
     
@@ -54,3 +56,4 @@ int main() {
     
     }
     return 0;
+}
